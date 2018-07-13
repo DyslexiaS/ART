@@ -127,21 +127,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\Dyslexia\\AndroidStudioProjects\\ART\\app\\build\\intermediates\\res\\merged\\debug\\values-v18_values-v18.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Dyslexia\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c166d6fa28bb09ace4d7c5cafb374147\\res\\values-v18\\values-v18.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "48",
-                        "endOffsets": "99"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\Dyslexia\\AndroidStudioProjects\\ART\\app\\build\\intermediates\\res\\merged\\debug\\values-zh-rHK_values-zh-rHK.arsc.flat",
             "map": [
                 {
@@ -169,6 +154,21 @@
                         "startOffsets": "1810",
                         "endColumns": "101",
                         "endOffsets": "1907"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\Dyslexia\\AndroidStudioProjects\\ART\\app\\build\\intermediates\\res\\merged\\debug\\values-v18_values-v18.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Dyslexia\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c166d6fa28bb09ace4d7c5cafb374147\\res\\values-v18\\values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
                     }
                 }
             ]
@@ -637,6 +637,21 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\Dyslexia\\AndroidStudioProjects\\ART\\app\\build\\intermediates\\res\\merged\\debug\\values-ldltr-v21_values-ldltr-v21.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Dyslexia\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c166d6fa28bb09ace4d7c5cafb374147\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\Dyslexia\\AndroidStudioProjects\\ART\\app\\build\\intermediates\\res\\merged\\debug\\values-sq_values-sq.arsc.flat",
             "map": [
                 {
@@ -664,21 +679,6 @@
                         "startOffsets": "1962",
                         "endColumns": "100",
                         "endOffsets": "2058"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Dyslexia\\AndroidStudioProjects\\ART\\app\\build\\intermediates\\res\\merged\\debug\\values-ldltr-v21_values-ldltr-v21.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Dyslexia\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c166d6fa28bb09ace4d7c5cafb374147\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "112",
-                        "endOffsets": "163"
                     }
                 }
             ]
@@ -716,38 +716,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\Dyslexia\\AndroidStudioProjects\\ART\\app\\build\\intermediates\\res\\merged\\debug\\values-pt-rBR_values-pt-rBR.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Dyslexia\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c166d6fa28bb09ace4d7c5cafb374147\\res\\values-pt-rBR\\values-pt-rBR.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,225,331,438,527,628,746,829,909,996,1103,1215,1317,1425,1532,1642,1804,1904",
-                        "endColumns": "119,105,106,88,100,117,82,79,86,106,111,101,107,106,109,161,99,84",
-                        "endOffsets": "220,326,433,522,623,741,824,904,991,1098,1210,1312,1420,1527,1637,1799,1899,1984"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Dyslexia\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\99f510a4f91e0cff5616e5c8977cf1f1\\res\\values-pt-rBR\\values-pt-rBR.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1989",
-                        "endColumns": "100",
-                        "endOffsets": "2085"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\Dyslexia\\AndroidStudioProjects\\ART\\app\\build\\intermediates\\res\\merged\\debug\\values-ka_values-ka.arsc.flat",
             "map": [
                 {
@@ -775,6 +743,38 @@
                         "startOffsets": "1959",
                         "endColumns": "100",
                         "endOffsets": "2055"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\Dyslexia\\AndroidStudioProjects\\ART\\app\\build\\intermediates\\res\\merged\\debug\\values-pt-rBR_values-pt-rBR.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Dyslexia\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c166d6fa28bb09ace4d7c5cafb374147\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,225,331,438,527,628,746,829,909,996,1103,1215,1317,1425,1532,1642,1804,1904",
+                        "endColumns": "119,105,106,88,100,117,82,79,86,106,111,101,107,106,109,161,99,84",
+                        "endOffsets": "220,326,433,522,623,741,824,904,991,1098,1210,1312,1420,1527,1637,1799,1899,1984"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Dyslexia\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\99f510a4f91e0cff5616e5c8977cf1f1\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1989",
+                        "endColumns": "100",
+                        "endOffsets": "2085"
                     }
                 }
             ]
