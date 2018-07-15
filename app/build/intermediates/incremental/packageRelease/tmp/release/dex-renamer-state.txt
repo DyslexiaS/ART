@@ -1,4 +1,0 @@
-#Thu Jul 12 21:03:26 CST 2018
-base.0=C\:\\Users\\Dyslexia\\AndroidStudioProjects\\ART\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
-path.0=classes.dex
-renamed.0=classes.dex
