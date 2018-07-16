@@ -6,49 +6,92 @@
     android:layout_height="match_parent"
     tools:context=".Introduction">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="361dp"
-        android:layout_height="141dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/title_logo"
-            android:layout_width="297dp"
-            android:layout_height="116dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/logo_iarts" />
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="361dp"
+            android:layout_height="141dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/title_logo"
+                android:layout_width="297dp"
+                android:layout_height="116dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/logo_iarts" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Left" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Center" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Right" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tab5" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_fivr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tab6" />
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/home"
+            android:layout_below="@+id/tablayout"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" />
 
         <Button
             android:id="@+id/home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
             android:layout_weight="1"
             android:text="Home" />
-    </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="312dp"
-        android:layout_marginBottom="80dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="21dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+    </RelativeLayout>
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="簡介" />
-    </FrameLayout>
 </android.support.constraint.ConstraintLayout>
