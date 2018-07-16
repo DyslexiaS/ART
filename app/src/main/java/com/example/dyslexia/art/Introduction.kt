@@ -1,9 +1,10 @@
 package com.example.dyslexia.art
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.widget.Button
+import kotlinx.android.synthetic.main.activity_introduction.*
 
 class Introduction : AppCompatActivity() {
 
@@ -15,5 +16,8 @@ class Introduction : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+        val fragmentAdapter = MyPagerAdapter(supportFragmentManager)
+        viewpager_main.adapter = fragmentAdapter
+        tablayout.setupWithViewPager(viewpager_main)
     }
 }

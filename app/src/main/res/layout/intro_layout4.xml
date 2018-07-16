@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:text="\n藝術研究所課程架構  \n三領域︰戲劇、音樂、美術。  \n五分類︰研究法、史、評論、藝術理論、跨域研究。  \n必修課程︰「藝術學研究法」、「美學」及「藝術專題討論」，其它為選修課程。
+                    \n\n戲劇碩士學位學程(研究所)課程架構  \n選修課程共分四類︰文學、戲劇、戲曲及跨域研究。  \n必修課程︰「戲劇學研究法」及「劇場實務」，其它為選修課程。
+                    \n\n師培課程  \n「高中-藝術生活科-表演藝術」該學程由本所戲劇、音樂及文學院「戲劇學程」、醫學院、社科院的老師授課，培育高中表演藝術師資人才。  \n「藝術生活科-視覺應用藝術」，該學程由本所美術老師及本校視覺藝術的老師授課，培育高中視覺藝術師資人才。" />
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

@@ -33,7 +33,7 @@
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tablayout"
-            android:layout_width="wrap_content"
+            android:layout_width="369dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/linearLayout"
             android:layout_centerInParent="true"
@@ -43,35 +43,35 @@
                 android:id="@+id/tab_one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Left" />
+                android:text="所長的話" />
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tab_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Center" />
+                android:text="歷史沿革" />
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tab_three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Right" />
+                android:text="重要事紀" />
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tab_four"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tab5" />
+                android:text="宗旨展望" />
 
             <android.support.design.widget.TabItem
-                android:id="@+id/tab_fivr"
+                android:id="@+id/tab_five"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tab6" />
+                android:text="發展計畫" />
         </android.support.design.widget.TabLayout>
 
         <android.support.v4.view.ViewPager
-            android:id="@+id/page"
+            android:id="@+id/viewpager_main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/home"

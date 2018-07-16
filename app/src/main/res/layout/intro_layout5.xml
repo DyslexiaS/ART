@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:text="本所訂定「近中長程」計畫：均衡及健全藝術三領域師資、落實課程改革，深化藝術跨域教學，擴展藝術三領域組織，以及推動成立「藝術學院」。" />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>
