@@ -1,30 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:minHeight="182dp">
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp">
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
-            <LinearLayout
+            <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:id="@+id/content"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:text="時　　間	　　　　　重　要　事　項\n  82.08	獲教育部准予成立 （82年8月2日臺高(82)字第043221號函）\n  83.08	創所所長閻振瀛教授  83.08	第一屆學生入學  84.07	《藝術論衡》創刊號發行  84.08	范光棣教授任第二屆所長  89.08	高燦榮副教授任第三屆所長  92.08	劉梅琴副教授任第四屆所長  94.08	張高評教授任第五屆所長  96.08	王偉勇教授任第六任所長  96.09	《成藝學刊》創刊號發行  97.05	主辦2008全國藝術學領域研究生研討會  97.11	《藝術論衡》復刊第一期發行  97.12	九十七年度下半年大學校院系所評鑑，評鑑結果「待觀察」。  99.02-08	聘任曾永義教授為本所客座講座教授  99.08	吳奕芳助理教授通過升等為副教授  99.12	九十七年度下半年大學校院系所評鑑追蹤評鑑，評鑑結果「通過」。  100.03	中等學校師資職前教育專門課程「高級中等學校─藝術生活科─視覺應用藝術」核定通過  100.08	吳奕芳副教授榮獲本校99學年度教學優良教師  100.09.24-25	主辦2011第二屆藝術論衡國際研討會─異地與在地藝術風格表現  101.02	朱芳慧教副授任第七屆所長  101.08	朱芳慧副教授通過升等為教授  101.08	楊金峯助理教授榮獲本校100學年度教學優良教師  101.08	楊金峯助理教授通過升等為副教授  101.10.06-07	主辦2012第三屆藝術論衡─異地與在地藝術風格表現國際學術研討會  101.11-103.06	本所進行課程架構修訂，並於103年代表文學院參與本校「落實課程更新成果競賽」  101.12.03	主辦臺灣南區大學「科技藝術論壇」  103.08	新版課程架構表正式施行  103.10	本所榮獲103年本校「落實課程更新成果競賽」佳作  103.11.01-02	主辦2014戲劇跨領域學術研討會  103.11	104年度大學校院第二週期系所自我評鑑(初評)  104.02	朱芳慧教授續任第八屆所長  104.06	《藝術論衡》期刊數位版權正式簽約授權「聯合百科電子出版有限公司」  104.10	本所通過104年度大學校院第二週期系所自我評鑑  104.11.27-28	主辦2015傳統音樂與藝陣之流變國際學術研討會  105.02	施德玉教授獲聘本校特聘教授  105.08	文學院戲劇碩士學位學程核定通過  105.08	朱芳慧教授榮獲本校104學年度教學優良教師  105.10	中等學校師資職前教育專門課程「高級中等學校─藝術生活科─表演藝術」核定通過  105.10	中等學校師資職前教育專門課程「高級中等學校─藝術生活科─視覺應用藝術」修訂版核定通過  105.11	本所榮獲105年成大85週年校慶運動會「最佳進場獎」第二名  107.02	楊金峯教副授任第九屆所長" />
-            </LinearLayout>
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/event" />
         </ScrollView>
 
     </FrameLayout>
