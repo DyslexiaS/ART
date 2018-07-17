@@ -12,6 +12,12 @@ class MyCalendar : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calendar)
 
+        val home_btn = findViewById<Button>(R.id.home)
+        home_btn.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
         val calendar_ncku = findViewById<Button>(R.id.button9)
         calendar_ncku.setOnClickListener {
             val url = Intent(Intent.ACTION_VIEW, Uri.parse("http://web.ncku.edu.tw/p/412-1000-6149.php?Lang=zh-tw"))
