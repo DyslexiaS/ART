@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Introduction"></activity>
+        <activity android:name=".MyCalendar"></activity>
     </application>
 
 </manifest>
