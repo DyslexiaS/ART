@@ -14,8 +14,7 @@ class MyCalendar : AppCompatActivity() {
 
         val home_btn = findViewById<Button>(R.id.home)
         home_btn.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+           this.finish()
         }
 
         val calendar_ncku = findViewById<Button>(R.id.button9)

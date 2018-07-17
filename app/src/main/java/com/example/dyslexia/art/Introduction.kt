@@ -13,8 +13,9 @@ class Introduction : AppCompatActivity() {
         setContentView(R.layout.activity_introduction)
         val home_btn = findViewById<Button>(R.id.home)
         home_btn.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+//            val intent = Intent(this, MainActivity::class.java)
+//            startActivity(intent)
+            this.finish()
         }
         val fragmentAdapter = MyPagerAdapter(supportFragmentManager)
         viewpager_main.adapter = fragmentAdapter
