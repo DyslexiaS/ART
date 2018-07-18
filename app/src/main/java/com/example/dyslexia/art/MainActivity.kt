@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         val phone_btn = findViewById<Button>(R.id.button5)
         phone_btn.setOnClickListener {
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("tel:062757575#52500")))
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("tel:062757575+p+52500")))
         }
 
         val link_ncku = findViewById<ImageButton>(R.id.imageButton)
