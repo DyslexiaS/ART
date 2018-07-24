@@ -42,6 +42,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("tel:062757575+p+52500")))
         }
 
+        val table_btn= findViewById<Button>(R.id.button8)
+        table_btn.setOnClickListener {
+            val url = Intent(Intent.ACTION_VIEW, Uri.parse("https://iartncku.github.io/page/gotogoogletable"))
+            startActivity(url)
+        }
+
         val link_ncku = findViewById<ImageButton>(R.id.imageButton)
         link_ncku.setOnClickListener {
             val url = Intent(Intent.ACTION_VIEW, Uri.parse("http://web.ncku.edu.tw/"))
