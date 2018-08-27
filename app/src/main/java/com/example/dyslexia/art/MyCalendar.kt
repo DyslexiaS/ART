@@ -27,5 +27,11 @@ class MyCalendar : AppCompatActivity() {
             val url = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.art.ncku.edu.tw/files/40-1408-11-1.php?Lang=zh-tw"))
             startActivity(url)
         }
+        val calendar_personal = findViewById<Button>(R.id.button11)
+        calendar_art.setOnClickListener {
+            val intent = Intent(this, PersonalCalendar::class.java)
+            startActivity(intent)
+        }
+
     }
 }
