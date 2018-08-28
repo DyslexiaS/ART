@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:background="#8D9840"
     tools:context="com.example.dyslexia.art.MainActivity">
 
     <LinearLayout
@@ -66,19 +67,19 @@
                 <Button
                     android:id="@+id/button1"
                     android:layout_width="110dp"
-                    android:layout_height="100dp"
+                    android:layout_height="110dp"
                     android:text="NCKU" />
 
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="110dp"
-                    android:layout_height="100dp"
-                    android:text="藝術所簡介" />
+                    android:layout_height="110dp"
+                    android:background="@drawable/home" />
 
                 <Button
                     android:id="@+id/button3"
                     android:layout_width="110dp"
-                    android:layout_height="100dp"
+                    android:layout_height="110dp"
                     android:text="藝術所首頁" />
 
             </TableRow>
@@ -90,20 +91,20 @@
                 <Button
                     android:id="@+id/button4"
                     android:layout_width="110dp"
-                    android:layout_height="100dp"
-                    android:text="行事曆" />
+                    android:layout_height="110dp"
+                    android:background="@drawable/day" />
 
                 <Button
                     android:id="@+id/button5"
                     android:layout_width="110dp"
-                    android:layout_height="100dp"
-                    android:text="辦公室電話" />
+                    android:layout_height="110dp"
+                    android:background="@drawable/phone" />
 
                 <Button
                     android:id="@+id/button6"
                     android:layout_width="110dp"
-                    android:layout_height="100dp"
-                    android:text="資料上傳" />
+                    android:layout_height="110dp"
+                    android:background="@drawable/apollocloud" />
 
             </TableRow>
 
@@ -114,19 +115,19 @@
                 <Button
                     android:id="@+id/button7"
                     android:layout_width="110dp"
-                    android:layout_height="100dp"
+                    android:layout_height="110dp"
                     android:text="Button" />
 
                 <Button
                     android:id="@+id/button8"
                     android:layout_width="110dp"
-                    android:layout_height="100dp"
-                    android:text="統計表" />
+                    android:layout_height="110dp"
+                    android:background="@drawable/math" />
 
                 <Button
                     android:id="@+id/button9"
                     android:layout_width="110dp"
-                    android:layout_height="100dp"
+                    android:layout_height="110dp"
                     android:text="Button" />
 
             </TableRow>
