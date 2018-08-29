@@ -1,14 +1,26 @@
 package com.example.dyslexia.art
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AlertDialog
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageButton
 
 class MainActivity : AppCompatActivity() {
-
+    fun checkLineindevice(): Boolean {
+        val pm = this.packageManager
+        val appList = pm.getInstalledApplications(0)
+        for (app in appList) {
+            Log.i("info", "app:" + app.packageName)
+            if (app.packageName == "jp.naver.line.android")
+                return true
+        }
+        return false
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -46,6 +58,27 @@ class MainActivity : AppCompatActivity() {
         table_btn.setOnClickListener {
             val url = Intent(Intent.ACTION_VIEW, Uri.parse("https://iartncku.github.io/page/gotogoogletable"))
             startActivity(url)
+        }
+        val line_btn=findViewById<Button>(R.id.button7)
+        line_btn.setOnClickListener {
+            if (checkLineindevice())
+            {
+                val webpage = Uri.parse("https://line.me/ti/p/YzE2rJhvmD")
+                val webIntent = Intent(Intent.ACTION_VIEW, webpage)
+                startActivity(webIntent)
+            }
+            else
+            {
+                val builder = AlertDialog.Builder(this@MainActivity)	//main是class name
+                builder.setTitle("應用程式需求")
+                builder.setMessage("需要line")
+                builder.setPositiveButton("OK"
+                ) { dialog, which ->
+                    // TODO Auto-generated method stub
+                    //按下按鈕後執行的動作，沒寫則退出Dialog
+                }
+                        .show()
+            }
         }
 
         val link_ncku = findViewById<ImageButton>(R.id.imageButton)

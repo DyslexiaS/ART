@@ -116,7 +116,7 @@
                     android:id="@+id/button7"
                     android:layout_width="110dp"
                     android:layout_height="110dp"
-                    android:text="Button" />
+                    android:text="Line" />
 
                 <Button
                     android:id="@+id/button8"
