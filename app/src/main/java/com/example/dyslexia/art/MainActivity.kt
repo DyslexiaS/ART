@@ -80,7 +80,11 @@ class MainActivity : AppCompatActivity() {
                         .show()
             }
         }
-
+        val file_btn = findViewById<Button>(R.id.button6)
+        file_btn.setOnClickListener {
+            val intent = Intent(this, fileupdate::class.java)
+            startActivity(intent)
+        }
         val link_ncku = findViewById<ImageButton>(R.id.imageButton)
         link_ncku.setOnClickListener {
             val url = Intent(Intent.ACTION_VIEW, Uri.parse("http://web.ncku.edu.tw/"))
