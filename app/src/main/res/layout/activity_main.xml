@@ -12,7 +12,8 @@
         android:layout_height="141dp"
         android:layout_marginTop="30dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:backgroundTint="#8D9840">
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -54,7 +55,8 @@
         android:layout_marginTop="180dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="#8D9840">
 
         <TableLayout
             android:layout_width="match_parent"
@@ -143,6 +145,7 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent"
+        tools:background="#8D9840"
         tools:layout_editor_absoluteX="0dp">
 
     </LinearLayout>
