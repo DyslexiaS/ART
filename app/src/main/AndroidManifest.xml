@@ -32,7 +32,9 @@
             android:label="@string/title_activity_calendar_person"
             android:theme="@style/AppTheme" />
         <activity android:name=".PersonalCalendar" />
-        <activity android:name=".fileupdate"></activity>
+        <activity android:name=".fileupdate" />
+        <activity android:name=".paper" />
+        <activity android:name=".meetingpaper"></activity>
     </application>
 
 </manifest>

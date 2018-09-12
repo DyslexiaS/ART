@@ -43,6 +43,7 @@
             android:id="@+id/button14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="meetingpaper_click"
             android:text="會議論文" />
 
         <Button

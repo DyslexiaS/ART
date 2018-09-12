@@ -3,6 +3,7 @@ package com.example.dyslexia.art;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -28,17 +29,40 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 
 public class fileupdate extends AppCompatActivity {
+    FTPClient mFtpClient;
+    String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fileupdate);
-        checkfile(false);
         new Thread(runnable).start();
+        checkfile(false);
     }
     Runnable runnable = new Runnable(){
         @Override
         public void run() {
-            connnectingwithFTP("140.116.17.99", "administrator", "19940801#em52500@");
+            boolean isconnect=connnectingwithFTP("140.116.17.99", "administrator", "19940801#em52500@");
+            if(!isconnect)
+            {
+                new AlertDialog.Builder(fileupdate.this)
+                        .setTitle("Error")
+                        .setMessage("Cannot connect FTP")
+                        .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                try{
+                                    mFtpClient.logout();
+                                    mFtpClient.disconnect();
+                                }catch (Exception e)
+                                {
+                                    Log.e("err","Log out error");
+                                }
+
+                                finish();
+                            }
+                        })
+                        .show();
+            }
         }
     };
     public void checkfile(boolean opendialog)
@@ -88,7 +112,7 @@ public class fileupdate extends AppCompatActivity {
         File file = new File(path, filename);
         try{
             FileOutputStream Output = new FileOutputStream(file, false);
-            Output.write(name.getBytes("UTF-8"));
+            Output.write(name.getBytes("Big5"));
             Output.close();
         }catch (Exception e)
         {
@@ -111,14 +135,17 @@ public class fileupdate extends AppCompatActivity {
             String readData = "";
             String temp = bufFile.readLine(); //readLine()讀取一整行
             Log.d("file",temp);
+            name=temp;
+            fr.close();
         }catch(Exception e){
             e.printStackTrace();
         }
+
     }
-    public void connnectingwithFTP(String ip, String userName, String pass) {
+    public boolean connnectingwithFTP(String ip, String userName, String pass) {
         boolean status = false;
         try {
-            FTPClient mFtpClient = new FTPClient();
+            mFtpClient = new FTPClient();
             mFtpClient.setConnectTimeout(10 * 1000);
             mFtpClient.connect(InetAddress.getByName(ip));
             status = mFtpClient.login(userName, pass);
@@ -133,12 +160,16 @@ public class fileupdate extends AppCompatActivity {
                 }
                 Log.d("Size", String.valueOf(mFileArray.length));
             }
+            return true;
         } catch (SocketException e) {
             e.printStackTrace();
+            return false;
         } catch (UnknownHostException e) {
             e.printStackTrace();
+            return false;
         } catch (IOException e) {
             e.printStackTrace();
+            return false;
         }
     }
     public void rename_clk(View view)
@@ -160,6 +191,18 @@ public class fileupdate extends AppCompatActivity {
                         "已刪除",
                         Toast.LENGTH_SHORT).show();
             }
+    }
+    public void meetingpaper_click(View view)
+    {
+        Intent intent =new  Intent(this, meetingpaper.class);
+        try{
+            mFtpClient.disconnect();
+        }catch (Exception e)
+        {
+            Log.e("err","Log out error");
+        }
+        startActivity(intent);
+
     }
 }
 
