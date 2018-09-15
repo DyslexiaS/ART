@@ -14,13 +14,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/rename"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
                 android:layout_weight="1"
+                android:background="#a2c8ff"
                 android:onClick="rename_clk"
                 android:text="修改姓名" />
 
@@ -28,7 +33,9 @@
                 android:id="@+id/delete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
+                android:background="#a2c8ff"
                 android:onClick="delete_clk"
                 android:text="刪除姓名" />
         </LinearLayout>
@@ -37,12 +44,20 @@
             android:id="@+id/button13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#a2c8ff"
             android:text="期刊論文" />
 
         <Button
             android:id="@+id/button14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#a2c8ff"
             android:onClick="meetingpaper_click"
             android:text="會議論文" />
 
@@ -50,18 +65,30 @@
             android:id="@+id/button15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#a2c8ff"
             android:text="展演" />
 
         <Button
             android:id="@+id/button16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#a2c8ff"
             android:text="專書" />
 
         <Button
             android:id="@+id/button17"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#a2c8ff"
             android:text="服務" />
     </LinearLayout>
 
