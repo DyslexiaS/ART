@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.NumberPicker;
 import android.widget.Toast;
 
 import org.apache.commons.net.ftp.FTPClient;
@@ -32,7 +33,8 @@ import org.apache.commons.net.ftp.FTPReply;
 public class meetingpaper extends AppCompatActivity {
     FTPClient mFtpClient;
     String name;
-    EditText meetingpaper_year;
+    //EditText meetingpaper_year;
+    int meetingpaper_year;
     EditText meetingpaper_work;
     EditText meetingpaper_teacher;
     EditText meetingpaper_other_teacher;
@@ -56,7 +58,20 @@ public class meetingpaper extends AppCompatActivity {
     }
     public void initial()
     {
-        meetingpaper_year=(EditText)this.findViewById((R.id.meetingpaper_year_tb));
+        NumberPicker year_pick = (NumberPicker) findViewById(R.id.year);
+        year_pick.setMinValue(1911);
+        year_pick.setMaxValue(2099);
+        year_pick.setValue(2018);
+        year_pick.setWrapSelectorWheel(true);
+        year_pick.setOnLongPressUpdateInterval(1000);
+        year_pick.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
+            @Override
+            public void onValueChange(NumberPicker picker, int oldVal, int newVal){
+                //Display the newly selected number from picker
+                meetingpaper_year = newVal;
+            }
+        });
+        //meetingpaper_year=(EditText)this.findViewById((R.id.meetingpaper_year_tb));
         meetingpaper_work=(EditText)this.findViewById((R.id.meetingpaper_work_tb));
         meetingpaper_teacher=(EditText)this.findViewById((R.id.meetingpaper_teacher_tb));
         meetingpaper_other_teacher=(EditText)this.findViewById((R.id.meetingpaper_other_teacher_tb));
@@ -68,7 +83,7 @@ public class meetingpaper extends AppCompatActivity {
         meetingpaper_country=(EditText)this.findViewById((R.id.meetingpaper_meetingcountry_tb));
         meetingpaper_out=(EditText)this.findViewById((R.id.meetingpaper_meetingout_tb));
         meetingpaper_add=(EditText)this.findViewById((R.id.meetingpaper_meetingadd_tb));
-        meetingpaper_year.setText("107");
+        //meetingpaper_year.setText("107");
         meetingpaper_work.setText("藝術研究所");
         meetingpaper_teacher.setText(name);
     }
@@ -102,8 +117,10 @@ public class meetingpaper extends AppCompatActivity {
         File file = new File(path, filename);
         try{
             FileOutputStream Output = new FileOutputStream(file, true);
-            Output.write(meetingpaper_year.getText().toString().getBytes("Big5"));
+            Output.write(meetingpaper_year);
             Output.write("\t".getBytes("Big5"));
+            //Output.write(meetingpaper_year.getText().toString().getBytes("Big5"));
+            //Output.write("\t".getBytes("Big5"));
             Output.write(meetingpaper_work.getText().toString().getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
             Output.write(meetingpaper_teacher.getText().toString().getBytes("Big5"));
@@ -290,10 +307,7 @@ public class meetingpaper extends AppCompatActivity {
     }
     public void OK_clk(View view)
     {
-        if(TextUtils.isEmpty(meetingpaper_year.getText()))
-        {
-            Toast.makeText(getApplicationContext(),"年度不得為空", Toast.LENGTH_SHORT).show();
-        }else if(TextUtils.isEmpty(meetingpaper_work.getText()))
+        if(TextUtils.isEmpty(meetingpaper_work.getText()))
         {
             Toast.makeText(getApplicationContext(),"單位不得為空", Toast.LENGTH_SHORT).show();
         }else if(TextUtils.isEmpty(meetingpaper_teacher.getText()))

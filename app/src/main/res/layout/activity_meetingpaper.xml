@@ -14,24 +14,26 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/meetingpaper_year"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:text="年度" />
+                android:text="年度"
+                android:textSize="16sp" />
 
-            <EditText
-                android:id="@+id/meetingpaper_year_tb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number"
-                android:text="Name" />
+            <NumberPicker
+                android:id="@+id/year"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="120dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
         </LinearLayout>
 
         <LinearLayout
@@ -41,10 +43,11 @@
 
             <TextView
                 android:id="@+id/meetingpaper_work"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="單位" />
+                android:text="單位"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/meetingpaper_work_tb"
@@ -63,10 +66,11 @@
 
             <TextView
                 android:id="@+id/meetingpaper_teacher"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="教師姓名" />
+                android:text="教師姓名"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/meetingpaper_teacher_tb"
@@ -85,10 +89,11 @@
 
             <TextView
                 android:id="@+id/meetingpaper_other_teacher"
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="其他教師姓名" />
+                android:text="其他教師姓名"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/meetingpaper_other_teacher_tb"
@@ -107,10 +112,11 @@
 
             <TextView
                 android:id="@+id/meetingpaper_Author"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="作者順序代碼" />
+                android:text="作者順序代碼"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/meetingpaper_Author_tb"
@@ -129,10 +135,11 @@
 
             <TextView
                 android:id="@+id/meetingpaper_paper"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="論文名稱" />
+                android:text="論文名稱"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/meetingpaper_paper_tb"
@@ -151,10 +158,11 @@
 
             <TextView
                 android:id="@+id/meetingpaper_meetingname"
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="會議名稱" />
+                android:text="會議名稱"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/meetingpaper_meetingname_tb"
@@ -173,10 +181,11 @@
 
             <TextView
                 android:id="@+id/meetingpaper_meetingdate"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="會議開始日期" />
+                android:text="會議開始日期"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/meetingpaper_meetingdate_tb"
@@ -195,10 +204,11 @@
 
             <TextView
                 android:id="@+id/meetingpaper_meetingdateend"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="會議結束日期" />
+                android:text="會議結束日期"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/meetingpaper_meetingdateend_tb"
@@ -217,10 +227,11 @@
 
             <TextView
                 android:id="@+id/meetingpaper_meetingcountry"
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="會議舉行國家/地區代碼" />
+                android:text="會議舉行國家/地區代碼"
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/meetingpaper_meetingcountry_tb"
@@ -239,10 +250,11 @@
 
             <TextView
                 android:id="@+id/meetingpaper_meetingout"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="會議是否有對外公開徵稿，並有審稿制度" />
+                android:text="會議是否有對外公開徵稿，並有審稿制度"
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/meetingpaper_meetingout_tb"
@@ -261,10 +273,11 @@
 
             <TextView
                 android:id="@+id/meetingpaper_meetingadd"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="補充說明" />
+                android:text="補充說明"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/meetingpaper_meetingadd_tb"
@@ -280,23 +293,36 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/meetingpaper_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
                 android:layout_weight="1"
-                android:onClick="OK_clk"
-                android:text="OK" />
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/meetingpaper_cancel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="cancel_clk"
-                android:text="Cancel" />
+                <Button
+                    android:id="@+id/meetingpaper_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_light"
+                    android:onClick="OK_clk"
+                    android:text="OK" />
+
+                <Button
+                    android:id="@+id/meetingpaper_cancel"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_red_light"
+                    android:onClick="cancel_clk"
+                    android:text="Cancel" />
+            </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
