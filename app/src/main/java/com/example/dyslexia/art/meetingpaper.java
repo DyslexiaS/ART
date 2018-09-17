@@ -59,9 +59,9 @@ public class meetingpaper extends AppCompatActivity {
     public void initial()
     {
         NumberPicker year_pick = (NumberPicker) findViewById(R.id.year);
-        year_pick.setMinValue(1911);
-        year_pick.setMaxValue(2099);
-        year_pick.setValue(2018);
+        year_pick.setMinValue(99);
+        year_pick.setMaxValue(120);
+        year_pick.setValue(107);
         year_pick.setWrapSelectorWheel(true);
         year_pick.setOnLongPressUpdateInterval(1000);
         year_pick.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
@@ -84,6 +84,7 @@ public class meetingpaper extends AppCompatActivity {
         meetingpaper_out=(EditText)this.findViewById((R.id.meetingpaper_meetingout_tb));
         meetingpaper_add=(EditText)this.findViewById((R.id.meetingpaper_meetingadd_tb));
         //meetingpaper_year.setText("107");
+        meetingpaper_year=107;
         meetingpaper_work.setText("藝術研究所");
         meetingpaper_teacher.setText(name);
     }
@@ -117,10 +118,10 @@ public class meetingpaper extends AppCompatActivity {
         File file = new File(path, filename);
         try{
             FileOutputStream Output = new FileOutputStream(file, true);
-            Output.write(meetingpaper_year);
+
+
+            Output.write(Integer.toString(meetingpaper_year).getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
-            //Output.write(meetingpaper_year.getText().toString().getBytes("Big5"));
-            //Output.write("\t".getBytes("Big5"));
             Output.write(meetingpaper_work.getText().toString().getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
             Output.write(meetingpaper_teacher.getText().toString().getBytes("Big5"));
