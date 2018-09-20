@@ -9,7 +9,7 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".exhibition">
+        tools:context=".service">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,7 +22,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/exhibition_year"
+                    android:id="@+id/service_year"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -31,7 +31,7 @@
                     android:textSize="16sp" />
 
                 <NumberPicker
-                    android:id="@+id/exhibition_year_pk"
+                    android:id="@+id/service_year_pk"
                     android:layout_width="100dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="0dp"
@@ -46,7 +46,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/exhibition_work"
+                    android:id="@+id/service_work"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -54,7 +54,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/exhibition_work_tb"
+                    android:id="@+id/service_work_tb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -69,7 +69,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/exhibition_teacher"
+                    android:id="@+id/service_teacher"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -77,7 +77,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/exhibition_teacher_tb"
+                    android:id="@+id/service_teacher_tb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -93,7 +93,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/exhibition_service_in"
+                    android:id="@+id/service_service_in"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -101,7 +101,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/exhibition_service_in_tb"
+                    android:id="@+id/service_service_in_tb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -116,7 +116,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/exhibition_service"
+                    android:id="@+id/service_service"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -124,7 +124,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/exhibition_service_tb"
+                    android:id="@+id/service_service_tb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -139,7 +139,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/exhibition_name"
+                    android:id="@+id/service_name"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -147,7 +147,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/exhibition_name_tb"
+                    android:id="@+id/service_name_tb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -162,7 +162,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/exhibition_position"
+                    android:id="@+id/service_position"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -170,7 +170,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/exhibition_unit_tb"
+                    android:id="@+id/service_unit_tb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -185,7 +185,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/exhibition_meeting"
+                    android:id="@+id/service_meeting"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -193,7 +193,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/exhibition_meeting_tb"
+                    android:id="@+id/service_meeting_tb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -208,7 +208,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/exhibition_speech"
+                    android:id="@+id/service_speech"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -216,7 +216,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/exhibition_speech_tb"
+                    android:id="@+id/service_speech_tb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -231,7 +231,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/exhibition_add"
+                    android:id="@+id/service_add"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -239,7 +239,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/exhibition_add_tb"
+                    android:id="@+id/service_add_tb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -262,7 +262,7 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/exhibition_button"
+                        android:id="@+id/service_button"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginLeft="60dp"
@@ -273,7 +273,7 @@
                         android:text="OK" />
 
                     <Button
-                        android:id="@+id/exhibition_cancel"
+                        android:id="@+id/service_cancel"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginRight="50dp"
