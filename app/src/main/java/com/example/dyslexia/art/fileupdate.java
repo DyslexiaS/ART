@@ -204,5 +204,17 @@ public class fileupdate extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void exhibition_clk(View view)
+    {
+
+        Intent intent =new  Intent(this, exhibition.class);
+        try{
+            mFtpClient.disconnect();
+        }catch (Exception e)
+        {
+            Log.e("err","Log out error");
+        }
+        startActivity(intent);
+    }
 }
 
