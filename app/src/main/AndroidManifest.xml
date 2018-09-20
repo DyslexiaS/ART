@@ -34,7 +34,11 @@
         <activity android:name=".PersonalCalendar" />
         <activity android:name=".fileupdate" />
         <activity android:name=".paper" />
-        <activity android:name=".meetingpaper"></activity>
+        <activity android:name=".meetingpaper" />
+        <activity android:name=".exhibition" />
+        <activity android:name=".journal" />
+        <activity android:name=".book" />
+        <activity android:name=".service"></activity>
     </application>
 
 </manifest>

@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         line_btn.setOnClickListener {
             if (checkLineindevice())
             {
-                val webpage = Uri.parse("https://line.me/ti/p/SXeh5Vioyu")
+                val webpage = Uri.parse("http://line.me/ti/p/%40tly1430n")
                 val webIntent = Intent(Intent.ACTION_VIEW, webpage)
                 startActivity(webIntent)
             }
