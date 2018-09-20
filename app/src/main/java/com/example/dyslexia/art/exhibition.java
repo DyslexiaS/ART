@@ -73,7 +73,7 @@ public class exhibition extends AppCompatActivity {
         exibition_other_teacher=(EditText)this.findViewById((R.id.exhibition_other_teacher_tb));
         exibition_name=(EditText)this.findViewById((R.id.exhibition_name_tb));
         exibition_startdate=(EditText)this.findViewById((R.id.exhibition_startdate_tb));
-        exibition_dateend=(EditText)this.findViewById((R.id.exhibition_dateend));
+        exibition_dateend=(EditText)this.findViewById((R.id.exhibition_dateend_tb));
         exibition_country=(EditText)this.findViewById((R.id.exhibition_country_tb));
         exibition_add=(EditText)this.findViewById((R.id.exhibition_add_tb));
         //exibition_year.setText("107");
@@ -107,33 +107,29 @@ public class exhibition extends AppCompatActivity {
     {
         File dir = this.getFilesDir();
         String path=dir.getPath();
-        String filename=name+"_meetingpaper.txt";
+        String filename=name+"_exhibition.txt";
         File file = new File(path, filename);
         try{
             FileOutputStream Output = new FileOutputStream(file, true);
-
-
             Output.write(Integer.toString(exibition_year).getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
-            Output.write(meetingpaper_work.getText().toString().getBytes("Big5"));
+            Output.write(exibition_work.getText().toString().getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
-            Output.write(meetingpaper_teacher.getText().toString().getBytes("Big5"));
+            Output.write(exibition_teacher.getText().toString().getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
-            Output.write(meetingpaper_other_teacher.getText().toString().getBytes("Big5"));
+            Output.write(exibition_other_teacher.getText().toString().getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
-            Output.write(meetingpaper_author.getText().toString().getBytes("Big5"));
+            Output.write(exibition_name.getText().toString().getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
-            Output.write(meetingpaper_paper.getText().toString().getBytes("Big5"));
+            Output.write(exibition_unit.getText().toString().getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
-            Output.write(meetingpaper_meetdate.getText().toString().getBytes("Big5"));
+            Output.write(exibition_country.getText().toString().getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
-            Output.write(meetingpaper_meetdateend.getText().toString().getBytes("Big5"));
+            Output.write(exibition_startdate.getText().toString().getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
-            Output.write(meetingpaper_country.getText().toString().getBytes("Big5"));
+            Output.write(exibition_dateend.getText().toString().getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
-            Output.write(meetingpaper_out.getText().toString().getBytes("Big5"));
-            Output.write("\t".getBytes("Big5"));
-            Output.write(meetingpaper_add.getText().toString().getBytes("Big5"));
+            Output.write(exibition_add.getText().toString().getBytes("Big5"));
             Output.write("\n".getBytes("Big5"));
             Output.close();
         }catch (Exception e)
@@ -155,7 +151,7 @@ public class exhibition extends AppCompatActivity {
                 outputStream = new BufferedOutputStream(new FileOutputStream(
                         path));
                 mFtpClient.setFileType(FTP.BINARY_FILE_TYPE);
-                boolean result =mFtpClient.retrieveFile("example2.txt",outputStream);
+                boolean result =mFtpClient.retrieveFile("example3.txt",outputStream);
                 if (result) Log.v("download result", "succeeded");
                 outputStream.close();
             }catch(Exception e)
@@ -269,10 +265,10 @@ public class exhibition extends AppCompatActivity {
                 mFtpClient.setFileType(FTP.ASCII_FILE_TYPE);
                 mFtpClient.enterLocalPassiveMode();
                 File dir = this.getFilesDir();
-                String path=dir.getPath()+"/"+name+"_meetingpaper.txt";
+                String path=dir.getPath()+"/"+name+"_exhibition.txt";
                 try{
                     FileInputStream in = new FileInputStream(new File(path));
-                    boolean result = mFtpClient.storeFile(name+"_meetingpaper.txt", in);
+                    boolean result = mFtpClient.storeFile(name+"_exhibition.txt", in);
                     in.close();
                     if (result) Log.v("upload result", "succeeded");
                 }

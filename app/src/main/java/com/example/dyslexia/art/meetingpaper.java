@@ -132,6 +132,8 @@ public class meetingpaper extends AppCompatActivity {
             Output.write("\t".getBytes("Big5"));
             Output.write(meetingpaper_paper.getText().toString().getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
+            Output.write(meetingpaper_meetname.getText().toString().getBytes("Big5"));
+            Output.write("\t".getBytes("Big5"));
             Output.write(meetingpaper_meetdate.getText().toString().getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
             Output.write(meetingpaper_meetdateend.getText().toString().getBytes("Big5"));
