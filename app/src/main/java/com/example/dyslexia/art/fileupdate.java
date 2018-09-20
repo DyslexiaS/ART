@@ -216,5 +216,41 @@ public class fileupdate extends AppCompatActivity {
         }
         startActivity(intent);
     }
+    public void journal_clk(View view)
+    {
+
+        Intent intent =new  Intent(this, journal.class);
+        try{
+            mFtpClient.disconnect();
+        }catch (Exception e)
+        {
+            Log.e("err","Log out error");
+        }
+        startActivity(intent);
+    }
+    public void book_clk(View view)
+    {
+
+        Intent intent =new  Intent(this, book.class);
+        try{
+            mFtpClient.disconnect();
+        }catch (Exception e)
+        {
+            Log.e("err","Log out error");
+        }
+        startActivity(intent);
+    }
+    public void service_clk(View view)
+    {
+
+        Intent intent =new  Intent(this, service.class);
+        try{
+            mFtpClient.disconnect();
+        }catch (Exception e)
+        {
+            Log.e("err","Log out error");
+        }
+        startActivity(intent);
+    }
 }
 

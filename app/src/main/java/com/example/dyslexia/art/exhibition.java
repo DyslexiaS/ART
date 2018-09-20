@@ -304,33 +304,27 @@ public class exhibition extends AppCompatActivity {
         if(TextUtils.isEmpty(exibition_work.getText()))
         {
             Toast.makeText(getApplicationContext(),"單位不得為空", Toast.LENGTH_SHORT).show();
-        }else if(TextUtils.isEmpty(meetingpaper_teacher.getText()))
+        }else if(TextUtils.isEmpty(exibition_teacher.getText()))
         {
-            Toast.makeText(getApplicationContext(),"教師姓名不得為空", Toast.LENGTH_SHORT).show();
-        }else if(TextUtils.isEmpty(meetingpaper_other_teacher.getText()))
+            Toast.makeText(getApplicationContext(),"作者姓名不得為空", Toast.LENGTH_SHORT).show();
+        }else if(TextUtils.isEmpty(exibition_other_teacher.getText()))
         {
-            Toast.makeText(getApplicationContext(),"其他教師姓名不得為空", Toast.LENGTH_SHORT).show();
-        }else if(TextUtils.isEmpty(meetingpaper_author.getText()))
+            Toast.makeText(getApplicationContext(),"其他作者姓名不得為空", Toast.LENGTH_SHORT).show();
+        }else if(TextUtils.isEmpty(exibition_name.getText()))
         {
-            Toast.makeText(getApplicationContext(),"作者順序代碼不得為空", Toast.LENGTH_SHORT).show();
-        }else if(TextUtils.isEmpty(meetingpaper_paper.getText()))
+            Toast.makeText(getApplicationContext(),"展演活動名稱不得為空", Toast.LENGTH_SHORT).show();
+        }else if(TextUtils.isEmpty( exibition_unit.getText()))
         {
-            Toast.makeText(getApplicationContext(),"論文名稱不得為空", Toast.LENGTH_SHORT).show();
-        }else if(TextUtils.isEmpty(meetingpaper_meetname.getText()))
+            Toast.makeText(getApplicationContext(),"展演主辦單位不得為空", Toast.LENGTH_SHORT).show();
+        }else if(TextUtils.isEmpty(exibition_country.getText()))
         {
-            Toast.makeText(getApplicationContext(),"會議名稱不得為空", Toast.LENGTH_SHORT).show();
-        }else if(TextUtils.isEmpty(meetingpaper_meetdate.getText()))
+            Toast.makeText(getApplicationContext(),"展演活動辦理國別/地區代碼不得為空", Toast.LENGTH_SHORT).show();
+        }else if(TextUtils.isEmpty(exibition_startdate.getText()))
         {
-            Toast.makeText(getApplicationContext(),"會議開始日期不得為空", Toast.LENGTH_SHORT).show();
-        }else if(TextUtils.isEmpty(meetingpaper_meetdateend.getText()))
+            Toast.makeText(getApplicationContext(),"展演活動開始日期不得為空", Toast.LENGTH_SHORT).show();
+        }else if(TextUtils.isEmpty(exibition_dateend.getText()))
         {
-            Toast.makeText(getApplicationContext(),"會議結束日期不得為空", Toast.LENGTH_SHORT).show();
-        }else if(TextUtils.isEmpty(meetingpaper_country.getText()))
-        {
-            Toast.makeText(getApplicationContext(),"會議舉行國家/地區代碼", Toast.LENGTH_SHORT).show();
-        }else if(TextUtils.isEmpty(meetingpaper_out.getText()))
-        {
-            Toast.makeText(getApplicationContext(),"會議是否有對外公開徵稿，並有審稿制度不得為空", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"展演活動結束日期不得為空", Toast.LENGTH_SHORT).show();
         }else if(TextUtils.isEmpty(exibition_add.getText()))
         {
             Toast.makeText(getApplicationContext(),"補充說明不得為空", Toast.LENGTH_SHORT).show();

@@ -48,6 +48,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/button_bg_round"
+            android:onClick="journal_clk"
             android:text="期刊論文" />
 
         <Button
@@ -80,6 +81,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/button_bg_round"
+            android:onClick="book_clk"
             android:text="專書" />
 
         <Button
@@ -90,6 +92,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/button_bg_round"
+            android:onClick="service_clk"
             android:text="服務" />
     </LinearLayout>
 
