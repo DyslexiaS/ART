@@ -5,5 +5,424 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".journal">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".journal">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="年度"
+                    android:textSize="16sp" />
+
+                <NumberPicker
+                    android:id="@+id/journal_year"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="120dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_work"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="單位"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/journal_work_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_teacher"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="作者姓名"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/journal_teacher_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_other_teacher"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="其他作者姓名"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/journal_other_teacher_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_name"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="作者順序代碼"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/journal_name_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_paper_name"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="期刊/學報之論文名稱"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/journal_paper_name_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_paper_name2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="期刊/學報名稱"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/journal_paper_name2_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_paper_num"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="期刊/學報卷數"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/journal_paper_num_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_paper_periods"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="期刊/學報期數"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/journal_paper_period_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_paper_year"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="期刊/學報年"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/journal_paper_year_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_paper_month"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="期刊/學報月"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/journal_paper_month_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_paper_code"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="論文發表形式代碼"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/journal_paper_code_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_location"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="發表區域代碼"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/journal_location_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_contact"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="教師是否為通訊作者"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/journal_contact_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_review"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="期刊/學報是否具審稿制度"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/journal_review_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journal_supplement"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="補充說明"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/journal_supplement_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/journal_button"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_green_light"
+                        android:onClick="OK_clk"
+                        android:text="OK" />
+
+                    <Button
+                        android:id="@+id/journal_cancel"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_red_light"
+                        android:onClick="cancel_clk"
+                        android:text="Cancel" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>
