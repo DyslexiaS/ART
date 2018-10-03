@@ -33,7 +33,7 @@
                     android:textSize="16sp" />
 
                 <NumberPicker
-                    android:id="@+id/journal_year"
+                    android:id="@+id/journal_year_pk"
                     android:layout_width="100dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="0dp"

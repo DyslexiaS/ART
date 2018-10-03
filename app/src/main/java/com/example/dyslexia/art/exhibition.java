@@ -33,6 +33,7 @@ public class exhibition extends AppCompatActivity {
     String name;
     //EditText meetingpaper_year;
     int exibition_year;
+    boolean FTP_file_exist;
     EditText exibition_work;
     EditText exibition_teacher;
     EditText exibition_other_teacher;
@@ -43,11 +44,14 @@ public class exhibition extends AppCompatActivity {
     EditText exibition_startdate;
     EditText exibition_add;
     boolean iswrite=false;
+    String file_name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exhibition);
+        FTP_file_exist=false;
         check_name();
+        file_name=name+"_exhibition.txt";
         iswrite=false;
         new Thread(runnable).start();
         initial();
@@ -107,7 +111,7 @@ public class exhibition extends AppCompatActivity {
     {
         File dir = this.getFilesDir();
         String path=dir.getPath();
-        String filename=name+"_exhibition.txt";
+        String filename=file_name;
         File file = new File(path, filename);
         try{
             FileOutputStream Output = new FileOutputStream(file, true);
@@ -141,17 +145,24 @@ public class exhibition extends AppCompatActivity {
     public void check_file()
     {
         File dir = this.getFilesDir();
-        String path=dir.getPath()+"/"+name+"_meetingpaper.txt";
+        String path=dir.getPath()+"/"+file_name;
         File file=new File(path);
         Log.d("file",file.getAbsolutePath());
         OutputStream outputStream = null;
         if((!file.exists())) {
 
             try{
+                boolean result;
                 outputStream = new BufferedOutputStream(new FileOutputStream(
                         path));
                 mFtpClient.setFileType(FTP.BINARY_FILE_TYPE);
-                boolean result =mFtpClient.retrieveFile("example3.txt",outputStream);
+                if(!FTP_file_exist) {
+                     result= mFtpClient.retrieveFile("example3.txt", outputStream);
+                }
+                else
+                {
+                    result= mFtpClient.retrieveFile(file_name, outputStream);
+                }
                 if (result) Log.v("download result", "succeeded");
                 outputStream.close();
             }catch(Exception e)
@@ -165,10 +176,19 @@ public class exhibition extends AppCompatActivity {
         {
             Log.d("e","file exist");
             try{
+                boolean result;
                 outputStream = new BufferedOutputStream(new FileOutputStream(
                         path));
                 mFtpClient.setFileType(FTP.BINARY_FILE_TYPE);
-                boolean result =mFtpClient.retrieveFile(name+"_meetingpaper.txt",outputStream);
+                if(FTP_file_exist){
+
+                    result =mFtpClient.retrieveFile(file_name,outputStream);
+                }
+                else
+                {
+                    result=false;
+                }
+
                 if (result) Log.v("download result", "succeeded");
                 outputStream.close();
             }catch(Exception e)
@@ -229,6 +249,13 @@ public class exhibition extends AppCompatActivity {
                 FTPFile[] mFileArray = mFtpClient.listFiles();
                 for (int i=0;i<mFileArray.length;i++)
                 {
+                    if((file_name).equals(mFileArray[i].getName()))
+                    {    Log.d("file","true");
+                        FTP_file_exist=true;
+                    }
+                    else {
+                        Log.d("file", "false");
+                    }
                     Log.d("file",mFileArray[i].getName());
                 }
                 Log.d("Size", String.valueOf(mFileArray.length));
@@ -265,10 +292,10 @@ public class exhibition extends AppCompatActivity {
                 mFtpClient.setFileType(FTP.ASCII_FILE_TYPE);
                 mFtpClient.enterLocalPassiveMode();
                 File dir = this.getFilesDir();
-                String path=dir.getPath()+"/"+name+"_exhibition.txt";
+                String path=dir.getPath()+"/"+file_name;
                 try{
                     FileInputStream in = new FileInputStream(new File(path));
-                    boolean result = mFtpClient.storeFile(name+"_exhibition.txt", in);
+                    boolean result = mFtpClient.storeFile(file_name, in);
                     in.close();
                     if (result) Log.v("upload result", "succeeded");
                 }

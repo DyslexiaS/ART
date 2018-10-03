@@ -35,7 +35,7 @@
                     android:textSize="16sp" />
 
                 <NumberPicker
-                    android:id="@+id/year"
+                    android:id="@+id/book_year_pk"
                     android:layout_width="100dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="0dp"
@@ -219,7 +219,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/book__pub_month_tb"
+                    android:id="@+id/book_pub_month_tb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
