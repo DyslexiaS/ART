@@ -84,7 +84,7 @@ public class journal extends AppCompatActivity {
         journal_name= (EditText) findViewById(R.id.journal_name_tb);
         journal_paper_name= (EditText) findViewById(R.id.journal_paper_name_tb);
         journal_paper_name2= (EditText) findViewById(R.id.journal_paper_name2_tb);
-        journal_paper_num= (EditText) findViewById(R.id.book__pub_month_tb);
+        journal_paper_num= (EditText) findViewById(R.id.journal_paper_num_tb);
         journal_paper_periods= (EditText) findViewById(R.id.journal_paper_period_tb);
         journal_paper_year= (EditText) findViewById(R.id.journal_paper_year_tb);
         journal_paper_month= (EditText) findViewById(R.id.journal_paper_month_tb);

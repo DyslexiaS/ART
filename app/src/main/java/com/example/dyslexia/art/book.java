@@ -82,7 +82,7 @@ public class book extends AppCompatActivity {
         book_lang_code= (EditText) findViewById(R.id.book_lang_code_tb);
         book_lang= (EditText) findViewById(R.id.book_lang_tb);
         book_pub_year= (EditText) findViewById(R.id.book_pub_year_tb);
-        book_pub_month= (EditText) findViewById(R.id.book__pub_month_tb);
+        book_pub_month= (EditText) findViewById(R.id.book_pub_month_tb);
         book_location= (EditText) findViewById(R.id.book_location_tb);
         book_ISBN= (EditText) findViewById(R.id.book_ISBN_tb);
         book_contact= (EditText) findViewById(R.id.book_contact_tb);
