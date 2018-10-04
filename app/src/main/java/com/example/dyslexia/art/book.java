@@ -145,11 +145,11 @@ public class book extends AppCompatActivity {
             Output.write(book_location.getText().toString().getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
             Output.write(book_ISBN.getText().toString().getBytes("Big5"));
-            Output.write("\n".getBytes("Big5"));
+            Output.write("\t".getBytes("Big5"));
             Output.write(book_contact.getText().toString().getBytes("Big5"));
-            Output.write("\n".getBytes("Big5"));
+            Output.write("\t".getBytes("Big5"));
             Output.write(book_pub.getText().toString().getBytes("Big5"));
-            Output.write("\n".getBytes("Big5"));
+            Output.write("\t".getBytes("Big5"));
             Output.write(book_meetingadd.getText().toString().getBytes("Big5"));
             Output.write("\n".getBytes("Big5"));
             Output.close();

@@ -147,17 +147,17 @@ public class journal extends AppCompatActivity {
             Output.write(journal_paper_periods.getText().toString().getBytes("Big5"));
             Output.write("\t".getBytes("Big5"));
             Output.write(journal_paper_year.getText().toString().getBytes("Big5"));
-            Output.write("\n".getBytes("Big5"));
+            Output.write("\t".getBytes("Big5"));
             Output.write(journal_paper_month.getText().toString().getBytes("Big5"));
-            Output.write("\n".getBytes("Big5"));
+            Output.write("\t".getBytes("Big5"));
             Output.write(journal_paper_code.getText().toString().getBytes("Big5"));
-            Output.write("\n".getBytes("Big5"));
+            Output.write("\t".getBytes("Big5"));
             Output.write(journal_location.getText().toString().getBytes("Big5"));
-            Output.write("\n".getBytes("Big5"));
+            Output.write("\t".getBytes("Big5"));
             Output.write(journal_contact.getText().toString().getBytes("Big5"));
-            Output.write("\n".getBytes("Big5"));
+            Output.write("\t".getBytes("Big5"));
             Output.write(journal_review.getText().toString().getBytes("Big5"));
-            Output.write("\n".getBytes("Big5"));
+            Output.write("\t".getBytes("Big5"));
             Output.write(journal_supplement.getText().toString().getBytes("Big5"));
             Output.write("\n".getBytes("Big5"));
 
