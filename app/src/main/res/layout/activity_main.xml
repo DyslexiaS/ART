@@ -148,6 +148,16 @@
         tools:background="#8D9840"
         tools:layout_editor_absoluteX="0dp">
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="© 2017 國立成功大學戲劇碩士學位學程\n
+701台南市大學路一號　TEL:06-2757575#52500　\n FAX:06-2766499　E-mail:em52500@email.ncku.edu.tw"
+            android:textAlignment="center" />
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
